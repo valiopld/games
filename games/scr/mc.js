@@ -71,8 +71,6 @@ function turn() {
   maxN == 14
     ? (winContainer.style.display = "block") + (winMoves.innerHTML = myN)
     : null;
-  console.log(n, maxN);
-  console.log(first, second);
   myN++;
   n++;
   myNcont.innerHTML = myN;
