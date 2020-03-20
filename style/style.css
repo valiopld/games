@@ -1,0 +1,95 @@
+:root {
+  --myBack: rgb(22, 21, 22);
+  --myBlue: rgb(48, 40, 56);
+  --myPurple: rgb(53, 7, 53);
+  --error: rgb(240, 40, 40);
+  --white: rgb(220, 220, 220);
+}
+
+body {
+  background: linear-gradient(
+    90deg,
+    var(--myBack),
+    var(--myBlue),
+    var(--myBack)
+  );
+  overflow: hidden;
+}
+
+.mainContainer {
+  display: flex;
+
+  width: 75rem;
+  height: 35rem;
+  margin: auto;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.game {
+  display: flex;
+  font-family: cursive;
+  background-color: var(--myPurple);
+  color: var(--white);
+  border: 1px solid black;
+  box-shadow: 0 0 1rem 0.1rem black;
+  text-shadow: 0 0 1rem black;
+  width: 50rem;
+  height: 10rem;
+  margin: 1rem;
+  cursor: pointer;
+  transition: all 1s;
+  font-size: 2.5rem;
+  align-items: center;
+  justify-content: center;
+}
+.game:hover {
+  transform: scale(1.1);
+}
+
+.visible {
+  transition: all 1s;
+}
+
+.openedGame {
+  display: block;
+
+  margin: auto;
+  width: 95vw;
+  height: 90vh;
+  border: 1px solid var(--white);
+
+  position: relative;
+  top: -34rem;
+  z-index: -1;
+  opacity: 0;
+  transition: all 1s;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.exit {
+  text-align: center;
+  display: inline-block;
+  padding: 0rem 0.5rem;
+  border: 0.1rem solid var(--error);
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+
+  cursor: pointer;
+  transition: all 0.4s;
+  color: var(--error);
+  font-weight: bold;
+  font-family: cursive;
+  font-size: 1.2rem;
+}
+
+.exit:hover {
+  background-color: var(--error);
+  color: var(--white);
+  border: 0.1rem solid var(--myBack);
+}

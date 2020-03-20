@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../style/games.css" />
+    <link rel="stylesheet" href="../style/ttt.css" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Tic-Tac-Toe Game</title>
+  </head>
+  <body>
+    <div class="top">
+      <div class="xo">
+        <span style="color:var(--color4)">Player: X </span>
+        <span style="color:var(--color3)">Computer: O</span>
+      </div>
+      <div class="turn">
+        Turn N: <span>0</span>
+        <p class="isMyTurn"></p>
+      </div>
+    </div>
+    <table class="ttt-table">
+      <tr>
+        <td data-key="aa"></td>
+        <td data-key="ab"></td>
+        <td data-key="ac"></td>
+      </tr>
+      <tr>
+        <td data-key="ba"></td>
+        <td data-key="bb"></td>
+        <td data-key="bc"></td>
+      </tr>
+      <tr>
+        <td data-key="ca"></td>
+        <td data-key="cb"></td>
+        <td data-key="cc"></td>
+      </tr>
+    </table>
+
+    <div class="msg"></div>
+    <div class="restart">Restart</div>
+    <script src="./scr/ttt.js"></script>
+  </body>
+</html>

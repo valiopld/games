@@ -1,0 +1,67 @@
+.ttt-table {
+  border-spacing: 0;
+  margin-top: 2rem;
+}
+
+.ttt-table td {
+  font-family: cursive;
+  text-align: center;
+  padding: 0.5;
+  font-size: 3.8rem;
+  font-weight: bold;
+  border: 2px solid var(--color2);
+  border-radius: 3px;
+  width: 5.5rem;
+  height: 5.5rem;
+
+  cursor: pointer;
+  transition: all 0.5s;
+  color: var(--color1);
+}
+
+.ttt-table td:first-child {
+  border-left: none;
+}
+.ttt-table td:last-child {
+  border-right: none;
+}
+.ttt-table tr:first-child td {
+  border-top: none;
+}
+.ttt-table tr:last-child td {
+  border-bottom: none;
+}
+.ttt-table td:hover {
+  background: radial-gradient(
+    rgb(240, 240, 240, 0.1),
+    rgb(240, 240, 240, 0.05),
+    var(--color1) 50%
+  );
+}
+
+.msg {
+  margin: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.restart {
+  display: none;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  border: 0.1rem solid var(--color2);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.restart:hover {
+  color: var(--color6);
+  border: 0.1rem solid var(--color6);
+}
+
+.top {
+  text-align: center;
+}
+
+.xo span {
+  display: inline-block;
+  margin: 1rem;
+}

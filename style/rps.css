@@ -1,0 +1,93 @@
+.mainContainer {
+  display: flex;
+  height: 30rem;
+  width: 50rem;
+  justify-content: space-between;
+}
+
+.cont {
+  width: 30%;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.ico {
+  height: 30%;
+  margin: 0.5rem 1rem 1rem 1rem;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: all 0.5s;
+}
+
+.rightCont .rock,
+.rightCont .paper,
+.rightCont .scissors {
+  transform: rotateY(180deg);
+}
+.rock {
+  background-image: url("../style/images/rock.png");
+}
+.paper {
+  background-image: url("../style/images/paper.png");
+}
+.scissors {
+  background-image: url("../style/images/scissors.png");
+}
+
+.leftCont .ico:hover {
+  cursor: pointer;
+  transform: scale(1.1) translateX(0.25rem) translateY(0.08rem);
+}
+
+.rightCont .ico {
+  filter: grayscale(90%);
+}
+
+.top {
+  text-align: center;
+  margin: 0.3rem;
+  font-size: 1.2rem;
+}
+
+.activeIco {
+  background-position: right;
+  filter: grayscale(0%);
+}
+.activeIco:hover {
+  background-position: right;
+}
+
+.centerCont {
+  text-align: center;
+  justify-content: space-between;
+}
+
+.showResult {
+  height: 3rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+
+.restart {
+  display: inline-block;
+  border: 1px solid white;
+  margin: 3rem;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.restart:hover {
+  color: yellow;
+  border: 1px solid yellow;
+  transform: scale(1.1);
+}
+
+.points {
+  display: flex;
+  justify-content: space-around;
+}
+.points span {
+  font-size: 2rem;
+}

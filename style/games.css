@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  border: 0;
+}
+
+:root {
+  --color1: rgb(18, 18, 20);
+  --color2: rgb(206, 199, 205);
+
+  --color3: rgb(40, 240, 40);
+  --color4: rgb(40, 40, 240);
+  --color5: rgb(240, 40, 40);
+
+  --color6: rgb(240, 240, 40);
+  --color7: rgb(40, 240, 240);
+  --color8: rgb(240, 40, 240);
+}
+body {
+  color: var(--color2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  background-color: var(--color1);
+  min-height: 32.5rem;
+  min-width: 40rem;
+}

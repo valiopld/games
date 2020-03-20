@@ -1,0 +1,41 @@
+#ttt {
+  animation: showing-left 3s;
+}
+#mc {
+  animation: showing-right 3.5s;
+}
+#snake {
+  animation: showing-left 2.7s;
+}
+#rps {
+  animation: showing-right 3.2s;
+}
+
+@keyframes showing-left {
+  0% {
+    margin-left: -500rem;
+  }
+  30% {
+    margin-left: 20rem;
+  }
+  50% {
+    margin-left: -20rem;
+  }
+  100% {
+    margin-left: 0rem;
+  }
+}
+@keyframes showing-right {
+  0% {
+    margin-left: 500rem;
+  }
+  30% {
+    margin-left: -20rem;
+  }
+  50% {
+    margin-left: 20rem;
+  }
+  100% {
+    margin-left: 0rem;
+  }
+}
