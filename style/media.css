@@ -1,0 +1,9 @@
+@media only screen and (max-width: 1200px) {
+  .visible,
+  .openedGame {
+    display: none;
+  }
+  .error {
+    display: block;
+  }
+}
