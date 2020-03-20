@@ -6,6 +6,11 @@
   --white: rgb(220, 220, 220);
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   background: linear-gradient(
     90deg,
@@ -14,12 +19,12 @@ body {
     var(--myBack)
   );
   overflow: hidden;
+  min-width: 900px;
 }
 
 .mainContainer {
   display: flex;
 
-  width: 75rem;
   height: 35rem;
   margin: auto;
   justify-content: center;
@@ -55,8 +60,8 @@ body {
   display: block;
 
   margin: auto;
-  width: 95vw;
-  height: 90vh;
+  width: 70rem;
+  height: 35rem;
   border: 1px solid var(--white);
 
   position: relative;
