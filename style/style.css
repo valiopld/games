@@ -12,6 +12,7 @@
   box-sizing: border-box;
 }
 .error {
+  display: none;
   text-align: center;
   font-size: 1.5rem;
   color: white;
